@@ -14,12 +14,10 @@ namespace DiamondKataTests
 
         [SetUp]
         public void Setup()
-        {
-            // Przekierowanie standardowego wyjœcia konsoli do StringWriter.
+        {            
             _stringWriter = new StringWriter();
             Console.SetOut(_stringWriter);
-
-            // Inicjalizacja DiamondService.
+           
             _diamondService = new DiamondService();
         }
 
